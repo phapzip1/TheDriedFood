@@ -52,6 +52,10 @@ body {
 
 
 
+.homeProduct-item p:last-of-type {
+    color: black;
+}
+
 .homeProduct-item .sale-off {
     display: flex;
     justify-content: space-evenly;
@@ -62,9 +66,6 @@ body {
     color: red;
 }
 
-.homeProduct-item p:last-of-type {
-    color: black;
-}
 
 .homeProduct-item .sale-off p:last-of-type {
     margin-bottom: 0;

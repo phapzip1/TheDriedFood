@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+
+}
+
+.header {
+    height: 52px;
+}
+
+.product-info {
+    
+}
+
+.product-info .slider{
+    width: 5.75rem;  
+    height: 5.75rem; 
+    display: inline-flex;
+    margin-left: ;
+}
+
+.product-img {
+
+}

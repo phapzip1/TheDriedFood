@@ -8,24 +8,83 @@ html,
 body {
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
-
+    line-height: 1.5;
 }
 
-.header {
-    height: 52px;
+/* common use */
+.inline {
+    display: inline-block;
 }
 
+.text-20px-upper {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 510;
+}
+
+.text-18px-upper {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 510;
+}
+
+/* product info */
 .product-info {
+    margin: 16px 0;
+}
+
+.product .product-info .slider{
+    width: 5.75rem;  
+    height: 5.75rem; 
+    display: inline-block;
+    border: 1px solid #000;
+    margin: 0 14px;
+}
+
+.product .product-info .product-img {
+    width: 400px;
+    height: 400px;
+}  
+
+/* product details */
+.product-details {
+    width: 50%;
+}
+
+.product-info .product-details .product-title {
+    font-weight: 510;
+    font-size: 28px;
     
 }
 
-.product-info .slider{
-    width: 5.75rem;  
-    height: 5.75rem; 
-    display: inline-flex;
-    margin-left: ;
+.product-info .product-details .product-status {
+    color: #1AFF06;
 }
 
-.product-img {
+.product-info .product-details .product-price {
+    padding: 7px 0;
+}
 
+/* product check kilo */
+.product-btn {
+    width: 50%;
+}
+
+.product-btn .product-check-kilo input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.product-btn .product-check-kilo label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-weight: 510;
+}
+
+.product-btn .product-check-kilo input[type="radio"]:checked + label {
+    background-color: #FCC06A;
 }

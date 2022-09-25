@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+/* checkout content */
+.checkout-content .checkout-title {
+    font-size: 20px;
+    font-weight: 510;
+}
+
+.checkout-content .shipment-detail {
+    margin: 64px 0;
+}
+
+.shipment-detail .lead {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.shipment-detail .lead a {
+    color: #EC7532;
+}
+
+.shipment-detail .input-info {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 1rem 0.5rem;
+    margin-bottom: 16px;
+    opacity: 0.4;
+}
+

@@ -14,27 +14,100 @@ body {
 .checkout-content .checkout-title {
     font-size: 20px;
     font-weight: 510;
+    line-height: 1.5;
 }
 
 .checkout-content .shipment-detail {
-    margin: 64px 0;
+    margin: 80px 0;
 }
 
 .shipment-detail .lead {
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 .shipment-detail .lead a {
     color: #EC7532;
 }
 
-.shipment-detail .input-info {
+.shipment-detail input {
     width: 100%;
     font-size: 16px;
     line-height: 1.5;
     padding: 1rem 0.5rem;
     margin-bottom: 16px;
-    opacity: 0.4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
+
+.shipment-detail .input-group label {
+    background-color: #fff;
+    font-size: 16px;
+    color: #999;
+}
+
+.shipment-detail .input-group {
+    margin-bottom: 16px;
+}
+
+.shipment-detail .header-price {
+    font-size: 20px;
+    color: #E12323;
+    line-height: 1.5;
+    font-weight: 510;
+}
+
+.shipment-detail .another-price {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.shipment-detail .detail-info {
+    font-size: 20px;
+}
+
+.shipment-detail .final-checkBtn {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    position: absolute;
+    bottom: 4%;
+}
+
+.anotherClass {
+    display: inline;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.final-checkBtn span:first-of-type {
+    text-align: center;
+}
+
+.final-checkBtn span:last-child {
+    text-align: right;
+}
+
+ .final-checkBtn {
+    background: #FDBD61;
+    border: none;
+    border-radius: 4px;
+    
+ }
+
+ .shipment-detail .button-parent {
+    position: relative;
+ }
+
+ .shipment-detail button[type="button"] {
+    background: #FDBD61;
+    color: #000;
+ }
+
+ .shipment-detail button[type="button"]:hover {
+    background: #ff8e15;
+    color: #fff;
+ }
 

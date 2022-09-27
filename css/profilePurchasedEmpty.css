@@ -1,0 +1,54 @@
+/* GOLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+/* PROFILE MAN */
+.profile-main {
+    padding: 5rem 0;
+}
+
+.profile-main h3 {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 2em;
+}
+
+.profile-main input {
+    padding: 1.5rem 0;
+}
+
+.profile-right a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.profile-right p {
+    background-color: #fbbd61;
+    padding: 1rem;
+    font-weight: 650;
+    border-radius: 5px;
+}
+
+.profile-main .profile-left {
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 500;
+}
+
+.profile-left p {
+    color: #999999;
+    font-size: 2em;
+    margin-top: 2rem;
+}

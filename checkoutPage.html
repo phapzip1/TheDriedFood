@@ -92,7 +92,7 @@
     <!-- content -->
     <div class="checkout-content container">
         <div class="row shipment-detail">
-            <div class="col-7">
+            <div class="col-8">
                 <h3 class="checkout-title">Shipment Details</h3>
                 <p class="lead ">Have an account ? <a href="#">Login</a></p>
 
@@ -107,11 +107,12 @@
                         <input class="input-info" type="number" placeholder="Phone Number">
                     </div>
                 </div>
-
+                
+                <!-- 3 nút chọn -->
                 <div class="row">
                     <div class="col-4">
                         <div class="input-group">
-                            <select class="custom-select" id="inputGroupSelect01">
+                            <select class="custom-select custom-select-lg" id="inputGroupSelect01">
                                 <option selected></option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -125,7 +126,7 @@
 
                     <div class="col-4">
                         <div class="input-group">
-                            <select class="custom-select" id="inputGroupSelect02">
+                            <select class="custom-select custom-select-lg" id="inputGroupSelect02">
                                 <option selected></option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -139,7 +140,7 @@
 
                     <div class="col-4">
                         <div class="input-group">
-                            <select class="custom-select" id="inputGroupSelect03">
+                            <select class="custom-select custom-select-lg" id="inputGroupSelect03">
                                 <option selected></option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -150,19 +151,72 @@
                             </div>
                         </div>
                     </div>
-
-                    
                 </div>
 
+                <!-- address -->
+                <input class="input-info" type="text" placeholder="Address">
+
+                <div class="row">
+                    <div class="col-8">
+                        <div class="input-group">
+                            <select class="custom-select custom-select-lg" id="inputGroupSelect01">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="input-group-append">
+                                <label class="input-group-text" for="inputGroupSelect01">Payment</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-5">
+            <!-- khung details -->
+            <div class="col-4 button-parent">
+                <h3 class="checkout-title">Details</h3>
 
+                <div class="row">
+                    <div class="col-8">
+                        <h3 class="checkout-title mb-3">Sub Total:</h3> 
+
+                        <p class="detail-info">Shipping fee:</p>
+                    </div>
+
+                    <div class="col-4">
+                        <p class="text-right text-sm-right header-price">10000đ</p>
+                        <p class="text-right text-sm-right another-price">20000đ</p>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" 
+                        placeholder="Promotion code" aria-label="Promotion code" aria-describedby="button-check">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline" type="button" id="button-check">Check</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <p class="detail-info">Promotion Discount:</p>
+                        <p class="detail-info">Member Discount:</p>
+                    </div>
+
+                    <div class="col-4">
+                        <p class="text-right text-sm-right another-price">-5000đ</p>
+                        <p class="text-right text-sm-right another-price">-5000đ</p>
+                    </div>
+                </div>
+                
+
+                <a class="final-checkBtn" href="">
+                    <span class="anotherClass">Check out</span>
+                    <span class="anotherClass">20000đ</span>
+                </a>
             </div>
         </div>
-
-        
-
     </div>
 
 

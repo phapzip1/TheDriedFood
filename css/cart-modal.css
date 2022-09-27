@@ -1,0 +1,131 @@
+/* GOLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+.section {
+    padding: 3rem 0;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.8em;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* Cart-modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-herder {
+    text-align: center;
+    
+}
+
+.modal-herder .herder-content {
+    font-weight: 600;
+    font-size: 28px;
+    /* line-height: 2.0; */
+    margin-top: 15px;
+}
+
+.cart-modal
+{
+    width: 470px;
+    height: 530px;
+    background-color: white;
+}
+
+.cart-modal .img-cart {
+    width: 100%;
+}
+
+.modal-body {
+    padding-top: 0;
+}
+
+.modal-body button[type="button"] {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border-radius: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #FCC06A;
+    border-color: #4e555b;
+}
+
+.modal-body .btn-secondary:focus {
+    box-shadow: none;
+}
+
+.modal-body .title {
+    margin-bottom: 0;
+}
+
+.modal-body p {
+    font-size: 14px;
+}
+
+.modal-body .quantity {
+    margin-bottom: 3px;
+}
+
+.modal-body .price {
+    margin-left: -15px;
+    margin-top: 6px;
+    color: #E12323;
+    font-weight: 600;
+}
+
+.modal-body .btn-group {
+    margin-left: -15px;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 21px;
+    color: #000000; 
+}
+
+.btn-outline-secondary:hover {
+    background-color: #FCC06A;;
+}
+
+.allcap button {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 35px;
+    padding-right: 35px;  
+    color: #000000; 
+}
+
+.allcap {
+    margin-top: 15px;
+}
+
+
+

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    width: 20%;
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+.content h1 {
+    margin-bottom: 64px;
+    color: #999;
+    font-weight: 510;
+}

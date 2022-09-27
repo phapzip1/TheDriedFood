@@ -106,8 +106,9 @@ body {
     color: #000;
  }
 
- .shipment-detail button[type="button"]:hover {
+ .final-checkBtn:hover, .shipment-detail button[type="button"]:hover {
     background: #ff8e15;
     color: #fff;
+    border: none;
  }
 

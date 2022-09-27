@@ -110,5 +110,9 @@ body {
     background: #ff8e15;
     color: #fff;
     border: none;
+    text-decoration: none;
  }
 
+ .final-checkBtn {
+    color: #000;
+ }

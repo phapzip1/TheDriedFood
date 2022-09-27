@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.notFoundPage-content {
+    text-align: center;
+}
+
+.notFoundPage-content img {
+    width: 10%;
+    margin-top: 80px;
+    margin-bottom: 16px;
+}
+
+.notFoundPage-content h1 {
+    margin-bottom: 64px;
+    color: #999;
+    font-weight: 510;
+}

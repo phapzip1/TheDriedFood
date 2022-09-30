@@ -60,3 +60,42 @@ body {
 .empty-img {
     width: 30%;
 }
+
+.productList-content .tableTitle {
+    font-size: 20px;
+    font-weight: 510;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.tableInfo a {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 510;
+    color: #000;
+}
+
+.tableInfo a:hover {
+    text-decoration: none;
+    background-color: #FDBD61;
+}
+
+.productPrice {
+    color: #E12323;
+}
+
+.productStatus {
+    color: #1AFF06;
+}
+
+.tableInfo a div {
+    padding: 0;
+    text-align: center;
+}
+
+.tableInfo a p {
+    margin: 0;
+}

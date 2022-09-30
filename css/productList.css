@@ -13,10 +13,11 @@ body {
 
 .productList-content h2{
     text-align: center;
+    font-size: 30px;
+    font-weight: 510;
 }
 
 .productList-title {
-    font-weight: 510;
     margin: 20px 0;
 }
 
@@ -48,4 +49,14 @@ body {
     background: #ec7532;
 }
 
+.productList-empty {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px 0;
+}
 
+.empty-img {
+    width: 30%;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <!-- OWN CAROUSEL -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -23,17 +24,18 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />   
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- BS4 CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/css/productList.css">
     <link rel="stylesheet" href="/css/header.css">
 </head>
+
 <body>
-       <!-- Header -->
+    <!-- Header -->
     <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
             <a class="navbar-brand logo-img" href="#">
@@ -93,7 +95,7 @@
 
     <div class="productList-content container">
         <h2 class="productList-title">Products</h2>
-        
+
         <div class="row">
             <div class="col-8">
                 <input type="text" class="searchBar" placeholder="Search">
@@ -110,7 +112,7 @@
                 class="empty-img">
             <h2 class="">Your product is empty</h2>
         </div> -->
-        
+
         <!-- product list -->
         <div class="row tableTitle">
             <div class="col-10" style="display: contents;">
@@ -137,8 +139,42 @@
             </div>
         </div>
 
+        <!-- one product -->
         <div class="row tableInfo">
-            <div class="col-10" style="padding-right: 0;">
+            <div class="col-10 list" style="padding-right: 0;">
+                <a href="" class="yourProduct">
+                    <div class="col-4">
+                        <p class="productName">Bun dau mam tom</p>
+                    </div>
+
+                    <div class="col-3">
+                        <p class="productPrice">10000đ</p>
+                        <p class="productPrice-promoted">30000đ</p>
+                    </div>
+
+                    <div class="col-3">
+                        <p class="productStatus-inStock">In Stock</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-2 tools">
+                <div class="col-1">
+                    <a href="" class="updateInfo-btn">
+                        <i class="fa fa-pen"></i>
+                    </a>
+                </div>
+
+                <div class="col-1">
+                    <button class="removeProduct-btn">
+                        <i class="fa fa-dumpster"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- one product -->
+        <div class="row tableInfo">
+            <div class="col-10 list" style="padding-right: 0;">
                 <a href="" class="yourProduct">
                     <div class="col-4">
                         <p class="productName">Bun dau mam tom</p>
@@ -149,23 +185,31 @@
                     </div>
 
                     <div class="col-3">
-                        <p class="productStatus">In Stock</p>
+                        <p class="productStatus-outOfStock">Out Of Stock</p>
                     </div>
                 </a>
             </div>
-            <div class="col-2">
+            <div class="col-2 tools">
+                <div class="col-1">
+                    <a href="" class="updateInfo-btn">
+                        <i class="fa fa-pen"></i>
+                    </a>
+                </div>
 
+                <div class="col-1">
+                    <button class="removeProduct-btn">
+                        <i class="fa fa-dumpster"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
 
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+            </script>
 </body>
+
 </html>

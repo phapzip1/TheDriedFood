@@ -1,9 +1,3 @@
-<!-- 
-    Giảm chiều cao
-    Không hover vào số 1
-    làm icon X
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Cart-modal</title>
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +26,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/cart-modal.css">
+    <!-- Fonts Icon -->
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+
 </head>
 
 <body>
@@ -42,11 +39,11 @@
             <header class="modal-herder">
                 <h3 class="herder-content">Cart</h3>
             </header>
-            <div class="container">
-                <!-- body -->
+            <!-- body -->
+            <div class="container body">
                 <div class="modal-body">
                     <hr>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-4">
                             <img class="img-cart"
                                 src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA12d63Y.img?w=600&h=399&m=6"
@@ -63,119 +60,61 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-5">
-                                    
+                                <div class="col-5 all-btn">
+
                                     <div class="btn-group" role="group" aria-label="Basic example">
                                         <button type="button" class="btn btn-secondary">-</button>
-                                        <button type="button" class="btn btn-secondary">1</button>
+                                        <p class="number">1</p>
                                         <button type="button" class="btn btn-secondary">+</button>
                                     </div>
                                 </div>
                                 <div class="col-7 price">
-                                    <p > 100000đ</p>
+                                    <p> 100000đ</p>
                                 </div>
-                            </div>                                          
-                        </div>
-                        <div class="col-1">
-                            <p>X</p>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="row">
-                        <div class="col-4">
-                            <img class="img-cart"
-                                src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA12d63Y.img?w=600&h=399&m=6"
-                                alt="">
-                        </div>
-
-                        <div class="col-7">
-                            <div class="row body-content">
-                                <p class="title" style="font-weight: bold">Kho ga bo toi</p>
                             </div>
-
-                            <div class="row">
-                                <p class="quantity">100g</p>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-5">
-                                    <!-- Giảm chiều cao -->
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-secondary">-</button>
-                                        <button type="button" class="btn btn-secondary">1</button>
-                                        <button type="button" class="btn btn-secondary">+</button>
-                                    </div>
-                                </div>
-                                <div class="col-7 price">
-                                    <p > 100000đ</p>
-                                </div>
-                            </div>                                          
                         </div>
-                        <div class="col-1">
-                            <p>X</p>
+                        <div class="col-1 btn-close">
+                            <i class="fa fa-times-circle"></i>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <hr>
-                    <div class="row">
-                        <div class="col-4">
-                            <img class="img-cart"
-                                src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA12d63Y.img?w=600&h=399&m=6"
-                                alt="">
-                        </div>
+                    <label class="label-cart">
+                        <i class="ti-shopping-cart"></i>
+                        <p>Empty Cart</p>
+                    </label>
 
-                        <div class="col-7">
-                            <div class="row body-content">
-                                <p class="title" style="font-weight: bold">Kho ga bo toi</p>
-                            </div>
+                    
 
-                            <div class="row">
-                                <p class="quantity">100g</p>
-                            </div>
+                    
+                    
 
-                            <div class="row">
-                                <div class="col-5">
-                                    <!-- Giảm chiều cao -->
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-secondary">-</button>
-                                        <button type="button" class="btn btn-secondary">1</button>
-                                        <button type="button" class="btn btn-secondary">+</button>
-                                    </div>
-                                </div>
-                                <div class="col-7 price">
-                                    <p>100000đ</p>
-                                </div>
-                            </div>                                          
-                        </div>
-                        <div class="col-1">
-                            <p>X</p>
-                        </div>
-                    </div>
                 </div>
+            </div>
+ 
+            <div class="container footer">
+                <hr>
                 <!-- footer -->
-                <div class="modal-footer">
-                    <div class="container">
-                        
-                        <div class="row between">
-                            <div class="label">
-                                Total
-                            </div>
-                                
-                            <div class="label">   
-                                300000đ
-                            </div>
-                        </div>
+                <div class="row between total">
+                    <div >
+                        Total:
+                    </div>
 
-                        <div class="row between allcap">
-                            
-                            <button type="button" class="btn btn-outline-secondary">View Detail</button>
-                            <button type="button" class="btn btn-outline-secondary">Checkout</button>
-                        </div>
+                    <div  style="color: red;">
+                        300000đ
                     </div>
                 </div>
 
+                <div class="row between allcap">
+                    <button class="btn-view">View Detail</button>
+                    <button class="btn-remove">Remove All</button>
+                    
+                    <!-- <button type="button" class="btn btn-outline-secondary">View Detail</button> -->
+                    <!-- <button type="button" class="btn btn-outline-secondary btn-remove-all">Remove All</button> -->
 
+                </div>
+                <!-- <div class="container">
+
+                </div> -->
             </div>
         </div>
     </div>

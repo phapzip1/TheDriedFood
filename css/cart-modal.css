@@ -42,8 +42,7 @@ body {
 
 .modal-herder .herder-content {
     font-weight: 600;
-    font-size: 35px;
-    /* line-height: 2.0; */
+    font-size: 35px;   
     margin-top: 15px;
 } 
 .cart-modal
@@ -184,14 +183,10 @@ body {
     
 }
 .btn-outline-secondary:hover {
-    background-color: #FCC06A;
-    
-    /* background-color: aqua; */
+    background-color: #FCC06A;  
 }
 
-.btn-remove-all:hover {
-    /* background-color: #E12323; */
-}
+
 
 .allcap button {
     text-transform: uppercase;
@@ -208,12 +203,6 @@ body {
 .allcap {
     margin-top: 15px;
 }
-
-.fa-times-circle {
-    /* background-color: #E12323; */
-    /* border-radius: 15px; */
-}
-
 
 .allcap button {
     background-color: white;

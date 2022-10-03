@@ -1,0 +1,117 @@
+/* GOLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+.section {
+    padding: 3rem 0;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.8em;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* Register */
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.header h1 {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    margin-bottom: 15px;
+
+}
+
+.register {
+    padding: 0 25px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 40%;
+    height: auto;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name input {
+    width: 42%;
+}
+
+.register input {
+    height: 42px;
+}
+
+.register-content {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-socialLink {
+    font-size: 16px;
+    color: #000;
+    border: 1px solid #666;
+    padding: 8px;
+    border-radius: 4px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.register-content .gg {
+    padding: 8px 20px;
+}
+
+.register-content a {
+    text-decoration: none;
+}
+
+.save {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FDBD61;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #EC7532;
+    border-color: #EC7532;
+    border: 1px solid #000;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #EC7532;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #EC7532;
+}
+

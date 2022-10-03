@@ -160,3 +160,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* CUSTOMERS */
+.customers p {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 5rem;
+    letter-spacing: 1rem;
+}

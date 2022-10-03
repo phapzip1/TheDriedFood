@@ -12,19 +12,19 @@ body {
 }
 
 /* PROFILE MAN */
-.profile-main {
+.profile-address {
     padding: 5rem 0;
 }
 
-.profile-main h3 {
+.profile-address h3 {
     font-weight: bold;
     text-align: center;
     padding-bottom: 3rem;
     font-size: 2em;
 }
 
-.profile-main input {
-    padding: 1.5rem 0;
+.profile-address input {
+    padding: 1.5rem 1rem;
 }
 
 .profile-right a {
@@ -44,7 +44,7 @@ body {
     font-weight: 510;
 }
 
-.profile-main .form-control#input-selectDate {
+.profile-address .form-control#input-selectDate {
     font-weight: 600;
 }
 
@@ -55,16 +55,20 @@ body {
     background-color: #fbbd61;
 }
 
-.profile-main .form-control#input-selectDate {
+.profile-address .form-control#input-selectDate {
     display: inline;
     width: 25%;
 }
 
 
-.profile-main button.btn-primary {
+.profile-address button.btn-primary {
     background-color: #ec7532;
     padding: 0.5rem 4rem;
     margin-top: 1rem;
     font-size: 1.3em;
     text-align: center;
+}
+
+.profile-left .content {
+    margin-bottom: 1rem;
 }

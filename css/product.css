@@ -2,19 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html,
 body {
-    font-family: 'Work Sans', sans-serif;
     font-size: 14px;
     line-height: 1.5;
 }
 
 /* common use */
-.inline {
-    display: inline-block;
-}
 
 .text-20px-upper {
     font-size: 20px;
@@ -29,8 +26,13 @@ body {
 }
 
 /* product info */
-/* .product-info {
-    margin: 16px 0;
+.product img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-info {
+    margin: 20px 0 50px;
 }
 
 .product .product-info .slider{
@@ -39,37 +41,19 @@ body {
     display: inline-block;
     border: 1px solid #000;
     margin: 0 14px;
-}
+} 
 
-.product .product-info .product-img {
-    width: 400px;
-    height: 400px;
-}   */
+.product .product-info .product-title {
+    font-weight: 600;
+}
 
 /* product details */
-/* .product-details {
-    width: 50%;
+.product-details h2 {
+    font-weight: 550;
 }
 
-.product-info .product-details .product-title {
-    font-weight: 510;
-    font-size: 28px;
-    
-}
 
-.product-info .product-details .product-status {
-    color: #1AFF06;
-}
-
-.product-info .product-details .product-price {
-    padding: 7px 0;
-} */
-
-/* product check kilo */
-/* .product-btn {
-    width: 50%;
-}
-
+/* product check kilo btn*/
 .product-btn .product-check-kilo input[type="radio"] {
     opacity: 0;
     position: fixed;
@@ -80,39 +64,43 @@ body {
     display: inline-block;
     padding: 10px 20px;
     font-size: 14px;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 4px;
     font-weight: 510;
 }
 
 .product-btn .product-check-kilo input[type="radio"]:checked + label {
     background-color: #FCC06A;
-} */
-
-/* .product img{
-    width: 50%;
-    height: 25%;
-} */
-
-.owl-carousel .item {
-    background: #4DC7A0;
-    padding: 1rem;
 }
 
-body{
-  padding: 10px;
-}
-.flex-column {
-  display: flex;
-  flex-wrap: nowrap;
+.product-check-kilo {
+    margin-bottom: 1rem;
 }
 
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.quantity {
+    text-align: center;
+    border: 1px solid #000;
 }
 
+/* 2 button thanh toán */
+.buyNowBtn,
+.addCartBtn {
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    color: #000;
+}
+
+.buyNowBtn {
+    background-color: #FCC06A;
+}
+
+.buyNowBtn:hover,
+.buyNowBtn:active{
+    background: #EC7532;
+}
+
+/* Description */
+.product-desc p {
+    font-size: 18px;
+}

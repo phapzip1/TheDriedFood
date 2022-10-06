@@ -182,36 +182,99 @@
 
     </div>
 
+    <!-- Phần description -->
     <div class="product-desc container">
-        <h4 class="text-center font-weight-bold">DESCRIPTION</h4>
-        <hr>
-        <p>Experience the modernized design of the Xbox Wireless Controller in Carbon Black, featuring sculpted surfaces
-            and refined geometry for enhanced comfort and effortless control during gameplay with battery usage
-            up to 40 hours.</p>
+        <div class="card-item">
+            <div class="content">
+                <h4 class="text-center font-weight-bold">DESCRIPTION</h4>
+                <hr>
+                <p class="text-danger">Experience the modernized design of the Xbox Wireless Controller in Carbon Black, featuring
+                    sculpted surfaces and refined geometry for enhanced comfort and effortless control during gameplay with battery
+                    usage up to 40 hours.</p>
 
-        <p> Stay on target with the hybrid D-pad, textured grip on the triggers, bumpers, and back-case. Plug in any
-            compatible headset with the 3.5mm audio headset jack.</p>
+                <p> Stay on target with the hybrid D-pad, textured grip on the triggers, bumpers, and back-case.
+                    Plug in
+                    any
+                    compatible headset with the 3.5mm audio headset jack.</p>
 
-        <p>Connect using the USB-C port for direct plug and play to console or PC. Support for AA batteries is included
-            on the rear.</p>
+                <p>Connect using the USB-C port for direct plug and play to console or PC. Support for AA batteries
+                    is
+                    included
+                    on the rear.</p>
 
-        <p>Use Xbox Wireless or Bluetooth to play across Xbox Series X|S, Xbox One, and Windows 10/11 devices.</p>
+                <p>Use Xbox Wireless or Bluetooth to play across Xbox Series X|S, Xbox One, and Windows 10/11
+                    devices.
+                </p>
 
-        <p>Seamlessly capture and share content with the Share button.</p>
+                <p>Seamlessly capture and share content with the Share button.</p>
 
-        <p>Compatible with Xbox Series X|S, Xbox One, and Windows 10/11 devices.</p>
+                <p>Compatible with Xbox Series X|S, Xbox One, and Windows 10/11 devices.</p>
 
-        <hr>
+                <hr style="margin-bottom: 0;">
+            </div>
+        </div>
+
+        <a class="button-more"><i id="icon-img" class="fa fa-angle-double-up"></i></a>
     </div>
 
-    <div class="product-relative">
-        <h4 class="text-center font-weight-bold">RELATIVE</h4>
-        
+    <!-- khung relative -->
+    <div class="product-relative mb-5">
+        <h4 class="text-center font-weight-bold mb-3">RELATIVE</h4>
+        <div class="owl-carousel owl-theme container">
+            <div class="product-relative-item ">
+                <img src="./imgs/Cơm cháy chà bông.jpg" alt="">
+                <h5 class="color-black">COM CHAY CHA BONG</h5>
+                <p class="text-danger">50000đ</p>
+            </div>
+
+            <div class="product-relative-item ">
+                <img src="./imgs/Khô bò.jpg" alt="">
+                <h5 class="color-black">Khô bò</h5>
+                <p class="text-danger">50000đ</p>
+            </div>
+
+            <div class="product-relative-item ">
+                <img src="./imgs/Mít sấy khô.jpg" alt="">
+                <h5 class="color-black">Mít sấy khô</h5>
+                <p class="text-danger">50000đ</p>
+            </div>
+
+            <div class="product-relative-item ">
+                <img src="./imgs/Khô gà bơ tỏi.jpg" alt="">
+                <h5 class="color-black">Khô gà bơ tỏi</h5>
+                <p class="text-danger">50000đ</p>
+            </div>
+        </div>
     </div>
 
+
+
+    <script>
+        let more = document.querySelectorAll('.button-more');
+        let icon = document.getElementById('icon-img').classList;
+
+        for (let i = 0; i < more.length; i++) {
+            more[i].addEventListener('click', function () {
+                more[i].parentNode.classList.toggle('active');
+            })
+            if(more[i].className.includes("active")){
+                icon.remove("fa fa-angle-double-up");
+                icon.add("fa fa-angle-double-down");
+            }
+            else {
+                icon.remove("fa fa-angle-double-down");
+                icon.add("fa fa-angle-double-up");
+            }
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js">
     </script>
+
+    <!-- Counter up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+    </script>
+    <script src="./js/jquery.countup.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
@@ -223,6 +286,53 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
 
+    <!-- own carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script>
+        $('.counter').countUp();
+    </script>
+
+    <script>
+        $('.carousel .owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            dots: true,
+            autoplay: true,
+            setTimeout: 500,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 0
+                },
+
+            }
+        })
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            dots: true,
+            autoplay: true,
+            setTimeout: 500,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 0
+                },
+                1000: {
+                    items: 4,
+                    margin: 0
+                }
+
+            }
+        })
+    </script>
 </body>
 
 </html>

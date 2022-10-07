@@ -1,0 +1,94 @@
+/* GOLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+.section {
+    padding: 3rem 0;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.8em;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* Search-modal */
+
+.search-modal .search i {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.search-modal .input-search {
+    border: 0;
+    outline: none;
+    width: 90%;
+}
+
+/* CSS wait loading */
+/* .search-modal .wait-search-parent {
+    margin: 10px 0;
+    display: flex;
+}
+
+.wait-search-parent .wait {
+    margin: auto;
+} */
+
+
+/* CSS show inform */
+/* .search-modal .inform {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+} */
+
+
+/* List item */
+.list-items {
+    /* justify-content: space-around; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-items .item {
+    margin: 10px 10px;
+    width: 190px;
+    /* margin-right: 15px; */
+}
+
+.card {
+    margin: 15px 0;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.price {
+    margin-bottom: 0;
+    color: red;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+

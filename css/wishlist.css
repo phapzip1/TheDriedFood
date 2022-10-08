@@ -1,0 +1,151 @@
+/* GOLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+.section {
+    padding: 3rem 0;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.8em;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* Wishlist-modal */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header h1 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 45px
+}
+
+.list-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+
+    width: 100%;
+}
+
+.item i {
+    color: rgb(251, 58, 58);
+}
+
+.item i:hover {
+    color: rgba(251, 58, 58, 0.6);
+}
+
+.card {
+    margin: 15px 0;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-item {
+    position: relative;
+}
+
+.item .btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 25px;
+}
+
+
+.card-title {
+    font-weight: 600;
+}
+
+.price {
+    margin-bottom: 0;
+    color: red;
+    font-size: 16px;
+}
+
+.flex-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container .item {
+    margin: 10px 10px;
+    position: relative;
+    width: 202px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+/* Nút số 1,2  */
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    margin-right: 10px;
+}
+
+.owl-theme .owl-dots .owl-dot.active {
+    background-color: #fbbd61;
+
+}
+
+.owl-theme .owl-dots .owl-dot:focus {
+    outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    bottom: -1.5%;
+    left: 36%;
+    font-size: 2.5em;
+}
+
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    bottom: -1.5%;
+    right: 37%;
+    font-size: 2.5em;
+}
+
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:focus {
+    outline: none;
+}
+
+/* empty wishlist */
+.empty {
+    text-align: center;
+}
+
+.empty img {
+    
+    width: 30%;
+    margin: 30px 0;
+}
+
+.empty h1{
+    font-size: 55px;
+    font-weight: 400;
+}

@@ -20,50 +20,34 @@ body {
     color: #000000;
 }
 
-/* Search-modal */
-
-.search-modal .search i {
-    margin-left: 10px;
-    margin-right: 20px;
-}
-
-.search-modal .input-search {
-    border: 0;
-    outline: none;
-    width: 90%;
-}
-
-/* CSS wait loading */
-/* .search-modal .wait-search-parent {
-    margin: 10px 0;
+/* Wishlist-modal */
+.header {
     display: flex;
+    justify-content: center;
 }
 
-.wait-search-parent .wait {
-    margin: auto;
-} */
-
-
-/* CSS show inform */
-/* .search-modal .inform {
-    margin-bottom: 10px;
+.header h1 {
     font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-} */
+    margin-bottom: 30px;
+    font-size: 45px
+}
 
-
-/* List item */
 .list-items {
-    /* justify-content: space-around; */
     display: flex;
     flex-wrap: wrap;
 }
 
-.list-items .item {
-    margin: 10px 10px;
-    width: 190px;
-    /* margin-right: 15px; */
+.item {
+
+    width: 100%;
+}
+
+.item i {
+    color: rgb(251, 58, 58);
+}
+
+.item i:hover {
+    color: rgba(251, 58, 58, 0.6);
 }
 
 .card {
@@ -73,6 +57,18 @@ body {
 .card-body {
     text-align: center;
 }
+
+.card-item {
+    position: relative;
+}
+
+.item .btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 25px;
+}
+
 
 .card-title {
     font-weight: 600;
@@ -84,11 +80,59 @@ body {
     font-size: 16px;
 }
 
+.flex-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    /* justify-content: space-between; */
+}
+
+.flex-container .item {
+    margin: 0 10px;
+    position: relative;
+    width: 202px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+/* Số 1,2 ở trang đầu - cuối */
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot span
+{
+    width: inherit;
+    height: inherit;
+    padding: 10px 20px;
+    margin: 5px 15px;
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span:hover,
+.owl-theme .owl-dots .owl-dot span:hover
+{
+    background-color: #FDBD61;
+}
 
 
+/* empty wishlist */
+.empty {
+    text-align: center;
+    /* justify-content: center; */
+}
 
+.empty img {
+    
+    width: 30%;
+    margin: 30px 0;
+}
 
-
-
-
-
+.empty h1{
+    /* text-transform: uppercase; */
+    font-size: 55px;
+    font-weight: 400;
+}

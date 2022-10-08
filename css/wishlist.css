@@ -83,13 +83,11 @@ body {
 .flex-container {
     margin-bottom: 30px;
     display: flex;
-    flex-wrap: nowrap;
-
-    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
 .flex-container .item {
-    margin: 0 10px;
+    margin: 10px 10px;
     position: relative;
     width: 202px;
     text-align: center;
@@ -97,32 +95,48 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
-/* Số 1,2 ở trang đầu - cuối */
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot span
-{
-    width: inherit;
-    height: inherit;
-    padding: 10px 20px;
-    margin: 5px 15px;
-    background-color: white;
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 3px;
-    font-size: 20px;
+/* Nút số 1,2  */
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    margin-right: 10px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span:hover,
-.owl-theme .owl-dots .owl-dot span:hover
-{
-    background-color: #FDBD61;
+.owl-theme .owl-dots .owl-dot.active {
+    background-color: #fbbd61;
+
 }
 
+.owl-theme .owl-dots .owl-dot:focus {
+    outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    bottom: -1.5%;
+    left: 36%;
+    font-size: 2.5em;
+}
+
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    bottom: -1.5%;
+    right: 37%;
+    font-size: 2.5em;
+}
+
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:focus {
+    outline: none;
+}
 
 /* empty wishlist */
 .empty {
     text-align: center;
-    /* justify-content: center; */
 }
 
 .empty img {
@@ -132,7 +146,6 @@ body {
 }
 
 .empty h1{
-    /* text-transform: uppercase; */
     font-size: 55px;
     font-weight: 400;
 }

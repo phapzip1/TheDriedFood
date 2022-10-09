@@ -45,6 +45,7 @@ body {
     font-size: 35px;   
     margin-top: 15px;
 } 
+
 .cart-modal
 {
     width: 30.5%;
@@ -69,6 +70,9 @@ body {
     padding: 3px 10.5px;
 }
 
+.body-content{
+    margin-bottom: 10px;
+}
 
 .number {
     margin-bottom: 0;
@@ -91,12 +95,12 @@ body {
     font-size: 20px;
 }
 
-.btn-close img {
-    width: 60%;
+.info {
+    margin-top: 10px;
 }
 
-.btn-close a:hover img{
-    /* background-color: aqua; */
+.btn-close img {
+    width: 60%;
 }
 
 .btn-close i {
@@ -106,14 +110,6 @@ body {
 .btn-close i:hover {
     color: rgba(251, 58, 58, 0.6);
 }
-/* .fa {
-    background:white;
-    border-radius: 50%;
-}
-
-.fa:hover {
-    background-color: #FCC06A;
-} */
 
 .btn-secondary:not(:disabled):not(.disabled):active {
     color: #fff;
@@ -207,7 +203,6 @@ body {
     padding-right: 35px;  
     color: #000000; 
 }
-
 
 
 .allcap {

@@ -73,23 +73,23 @@ body {
 }
 
 /* CSS wait loading */
-/* .search-modal .wait-search-parent {
+.search-modal .wait-search-parent {
     margin: 10px 0;
     display: flex;
 }
 
 .wait-search-parent .wait {
     margin: auto;
-} */
+}
 
 
 /* CSS show inform */
-/* .search-modal .inform {
+.search-modal .inform {
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
-} */
+}
 
 
 /* List item */

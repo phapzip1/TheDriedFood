@@ -27,6 +27,13 @@ body {
     padding-top: 10px;
     padding-bottom: 15px;
 }
+a {
+    color: #FDBD61;
+}
+a:hover{
+    color: #EC7532;
+    text-decoration: none;
+}
 
 .header h1 {
     font-weight: 600;

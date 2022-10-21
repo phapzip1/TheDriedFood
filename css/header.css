@@ -13,7 +13,6 @@ body {
 
 
 /* Header */
-
 header nav {
     border-radius: 10px;
 }
@@ -35,6 +34,11 @@ header .logo-img img {
     padding: 0;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .header-right i {
     margin: 0 0.7em;
     font-size: 1.5em;
@@ -60,6 +64,17 @@ header .logo-img img {
     color: #FFFFFF;
 }
 
+.header-right i {
+    cursor: pointer;
+}
+
 .header-right i a:hover {
     text-decoration: none;
+}
+
+.header-right img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 0.7em;
 }

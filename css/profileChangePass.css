@@ -1,0 +1,80 @@
+/* GOLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+/* PROFILE MAN */
+.profile-pass {
+    padding: 5rem 0;
+}
+
+.profile-pass h3 {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 2em;
+}
+
+.profile-pass input {
+    padding: 1.5rem 1rem;
+}
+
+.profile-right a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.profile-right p {
+    background-color: #fbbd61;
+    padding: 1rem;
+    font-weight: 650;
+    border-radius: 5px;
+}
+
+.profile-left label {
+    font-weight: 510;
+}
+
+.profile-pass .form-control#input-selectDate {
+    font-weight: 600;
+}
+
+.profile-left input[type="button"] {
+    padding: 0.5rem 3rem;
+    text-align: center;
+    font-weight: 500;
+    background-color: #fbbd61;
+}
+
+.profile-pass .form-control#input-selectDate {
+    display: inline;
+    width: 25%;
+}
+
+
+.profile-pass button.btn-primary {
+    background-color: #ec7532;
+    padding: 0.5rem 4rem;
+    margin-top: 1rem;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.profile-left .content {
+    margin-bottom: 1rem;
+}
+
+.profilePass-bottom a {
+    color: black;
+    font-weight: bold;
+    margin-left: 510px;
+}

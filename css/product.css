@@ -194,3 +194,9 @@ body {
     font-weight: 700;
 }
 
+::placeholder {
+    color: black;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: black;
+}

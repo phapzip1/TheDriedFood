@@ -44,7 +44,7 @@
                 <div class="modal-body">
                     <hr>
                     <!-- List item -->
-                    <div class="row item">
+                    <div class="row item" id="productTag1">
                         <div class="col-4">
                             <img class="img-cart"
                                 src="https://product.hstatic.net/1000303672/product/191008_kho_ga_cay_la_chanh__125g__hu__mau_nap_nhom_-_110625_-_01_f207b52b2a97453d91caedeafe67c0ed.jpg"
@@ -64,9 +64,9 @@
                                 <div class="col-5 all-btn">
 
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-secondary">-</button>
-                                        <p class="number">1</p>
-                                        <button type="button" class="btn btn-secondary">+</button>
+                                        <button type="button" class="btn btn-secondary" onclick="minus('amount1')">-</button>
+                                        <p id="amount1" class="number">1</p>
+                                        <button type="button" class="btn btn-secondary" onclick="plus('amount1')">+</button>
                                     </div>
                                 </div>
                                 <div class="col-7 price">
@@ -74,12 +74,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1 btn-close">
+                        <div class="col-1 btn-close" onclick="deleteCard('productTag1')">
                             <i class="fa fa-times-circle"></i>
                         </div>
                     </div>
 
-                    <div class="row item">
+                    <div class="row item" id="productTag2">
                         <div class="col-4">
                             <img class="img-cart"
                                 src="https://product.hstatic.net/1000303672/product/191008_kho_ga_cay_la_chanh__125g__hu__mau_nap_nhom_-_110625_-_01_f207b52b2a97453d91caedeafe67c0ed.jpg"
@@ -99,9 +99,9 @@
                                 <div class="col-5 all-btn">
 
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-secondary">-</button>
-                                        <p class="number">1</p>
-                                        <button type="button" class="btn btn-secondary">+</button>
+                                        <button type="button" class="btn btn-secondary" onclick="minus('amount2')">-</button>
+                                        <p id="amount2" class="number">1</p>
+                                        <button type="button" class="btn btn-secondary" onclick="plus('amount2')">+</button>
                                     </div>
                                 </div>
                                 <div class="col-7 price">
@@ -109,12 +109,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1 btn-close">
+                        <div class="col-1 btn-close" onclick="deleteCard('productTag2')">
                             <i class="fa fa-times-circle"></i>
                         </div>
                     </div>
 
-                    <div class="row item">
+                    <div class="row item" id="productTag3">
                         <div class="col-4">
                             <img class="img-cart"
                                 src="https://product.hstatic.net/1000303672/product/191008_kho_ga_cay_la_chanh__125g__hu__mau_nap_nhom_-_110625_-_01_f207b52b2a97453d91caedeafe67c0ed.jpg"
@@ -134,9 +134,9 @@
                                 <div class="col-5 all-btn">
 
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-secondary">-</button>
-                                        <p class="number">1</p>
-                                        <button type="button" class="btn btn-secondary">+</button>
+                                        <button type="button" class="btn btn-secondary" onclick="minus('amount3')">-</button>
+                                        <p id="amount3" class="number">1</p>
+                                        <button type="button" class="btn btn-secondary" onclick="plus('amount3')">+</button>
                                     </div>
                                 </div>
                                 <div class="col-7 price">
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1 btn-close">
+                        <div class="col-1 btn-close" onclick="deleteCard('productTag3')">
                             <i class="fa fa-times-circle"></i>
                         </div>
                     </div>
@@ -181,6 +181,28 @@
         </div>
     </div>
 
+
+    <!-- Nút chỉnh số lượng -->
+    <script>
+        let initialNumber = 1; //Này sẽ truyền cái số lượng đặt chọn trc đó vào đây
+
+        // amount.setAttribute("placeholder", initialNumber);
+
+        function minus(id) {
+            if (initialNumber > 1) --initialNumber;
+            document.getElementById(id).textContent = initialNumber;
+        }
+
+        function plus(id) {
+            ++initialNumber;
+            document.getElementById(id).textContent = initialNumber;
+        }
+
+        function deleteCard(id) {
+            document.getElementById(id).remove();
+        }
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js">
     </script>

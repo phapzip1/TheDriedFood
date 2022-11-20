@@ -85,19 +85,16 @@ body {
     padding-bottom: 5rem;
 }
 
-.category .categort-item img {
-    width: 100%;
-    border-radius: 10px;
-}
-
 .category .categort-item {
     position: relative;
 }
 
 .category .categort-item p {
     position: absolute;
-    bottom: -2%;
-    left: 35%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    right: 0;
     font-weight: 600;
     color: white;
     font-size: 1.5em;
@@ -196,4 +193,10 @@ body {
     font-size: 2em;
     font-weight: 400;
 
+}
+
+.item {
+    height: 234px;
+    background-size: cover;
+    border-radius: 10px;
 }

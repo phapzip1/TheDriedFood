@@ -44,11 +44,11 @@
                 <div class="col-6">
                     <div class="row" style="height: 100%;">
                         <div class="col-2.5">
-                            <div class="slider"></div>
+                            <img src="./imgs/Khoai sấy.jpg" class="slider" onclick="loadImg('./imgs/Khoai sấy.jpg')"></img>
                         </div>
 
                         <div class="col-9" style="padding: 0;">
-                            <img src="/imgs/Cơm khô ngào đường.jpg" alt="" class="product-img">
+                            <img src="/imgs/Cơm khô ngào đường.jpg" alt="" class="product-img" id="mainImg">
                         </div>
                     </div>
                 </div>
@@ -58,28 +58,28 @@
                     <div class="product-details">
                         <h1 class="product-title">Cơm khô ngào đường</h1>
 
-                        <h2 class="product-price text-20px-upper text-danger">200000đ</h2>
+                        <h2 class="product-price text-20px-upper text-danger" id="productPrice">200000đ</h2>
 
                         <h2 class="product-status-title text-20px-upper">Status: <span
-                                class="product-status text-20px-upper text-success">in stock</span></h2>
-                        <!-- <h2 class="product-status-title text-20px-upper">Status: <span class="product-status text-20px-upper text-danger">out of stock</span></h2> -->
+                                class="product-status text-20px-upper text-success" id="status">in stock</span></h2>
+                        <!-- <h2 class="product-status-title text-20px-upper">Status: <span class="product-status text-20px-upper text-danger" id="status">out of stock</span></h2> -->
                         <hr>
                     </div>
 
                     <!-- weight choice radio button -->
                     <div class="product-btn">
                         <div class="product-check-kilo">
-                            <input type="radio" name="kilo" id="flexRadioDefault1">
+                            <input type="radio" name="kilo" id="flexRadioDefault1" onclick="myFunction('flexRadioDefault1')">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 100g
                             </label>
 
-                            <input type="radio" name="kilo" id="flexRadioDefault2">
+                            <input type="radio" name="kilo" id="flexRadioDefault2" onclick="myFunction('flexRadioDefault2')">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 200g
                             </label>
 
-                            <input type="radio" name="kilo" id="flexRadioDefault3">
+                            <input type="radio" name="kilo" id="flexRadioDefault3" onclick="myFunction('flexRadioDefault3')">
                             <label class="form-check-label" for="flexRadioDefault3">
                                 300g
                             </label>
@@ -91,14 +91,14 @@
                         <div class="col-3">
                             <div class="input-group mb-3" style="width: 80%;">
                                 <div class="input-group-prepend">
-                                    <button class="btn btn-outline-secondary" type="button" id="button-minus"> -
-                                    </button>
+                                    <button class="btn btn-outline-secondary" type="button" id="button-minus" onclick="minus()"> - </button>
                                 </div>
+
                                 <input type="text" class="form-control quantity" placeholder=""
-                                    aria-label="Example text with button addon" aria-describedby="button-minus">
+                                    aria-label="Example text with button addon" aria-describedby="button-minus" readonly id="amount">
+
                                 <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                        id="button-addon2">+</button>
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="plus()">+</button>
                                 </div>
                             </div>
                         </div>
@@ -107,11 +107,11 @@
                     <!-- button add to cart + buy now -->
                     <div class="row">
                         <div class="col-4">
-                            <button type="button" class="btn btn-outline-secondary addCartBtn">ADD TO CART</button>
+                            <button type="button" class="btn btn-outline-secondary addCartBtn" id="addCartBtn">ADD TO CART</button>
                         </div>
 
                         <div class="col-4">
-                            <button type="button" class="buyNowBtn btn">BUY NOW</button>
+                            <button type="button" class="buyNowBtn btn" id="buyNowBtn">BUY NOW</button>
 
                             <!-- sold out btn -->
                             <!-- <button type="button" class="buyNowBtn btn"
@@ -191,7 +191,6 @@
     </div>
 
 
-
     <script>
         let more = document.querySelectorAll('.button-more');
         let icon = document.getElementById('icon-img').classList;
@@ -211,13 +210,85 @@
         }
     </script>
 
+    <!-- Ba cái nút chọn kg -->
+    <script>
+        let radio1 = document.getElementById('flexRadioDefault1');
+        let radio2 = document.getElementById('flexRadioDefault2');
+        let radio3 = document.getElementById('flexRadioDefault3');
+
+        let price = document.getElementById('productPrice');
+
+        let text;
+
+        radio1.setAttribute("checked", "true");
+
+        function myFunction(id) {
+            if (id === radio1.id){
+                text = '200000đ';  
+            }
+            else if (id === radio2.id) {
+                text = '300000đ';  
+            }
+            else {
+                text = '1 jack';  
+            }
+            price.textContent = text;
+        }
+    </script>
+
+    <!-- Nút chỉnh số lượng -->
+    <script>
+        let amount = document.getElementById('amount');
+        let initialNumber = 1;
+
+        amount.setAttribute("placeholder", initialNumber);
+
+        function minus() {
+            if (initialNumber > 1) --initialNumber;
+            console.log(initialNumber);
+            amount.setAttribute("placeholder", initialNumber);
+
+        }
+
+        function plus() {
+            ++initialNumber;
+            console.log(initialNumber);
+            amount.setAttribute("placeholder", initialNumber);
+        }
+    </script>
+
+    <!-- Nút add to card + buy now-->
+    <script>
+        let buyNow = document.getElementById('buyNowBtn');
+        let addCart = document.getElementById('addCartBtn');
+        let status = document.getElementById('status');
+
+        if( status.textContent === "out of stock") {
+            buyNow.textContent = "SOLD OUT";
+            buyNow.setAttribute("style", "opacity: 0.5; pointer-events: none;");
+            addCart.setAttribute("style", "opacity: 0.5; pointer-events: none;");
+            buyNow.setAttribute("disabled");
+            addCart.setAttribute("disabled");
+        }
+    </script>
+
+    <!-- Load hình -->
+    <script>
+        function loadImg(linkImg) {
+            document.getElementById('mainImg').setAttribute("src" , linkImg);
+        }
+    </script>
+
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js">
     </script>
 
     <!-- Counter up -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
     </script>
-    <script src="./js/jquery.countup.min.js"></script>
+    <script src="./js/jquery.countup.min.js">
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">

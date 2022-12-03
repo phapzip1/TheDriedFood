@@ -39,8 +39,8 @@ body {
 .search-modal
 {
     display: flex;
-    width: 80%;
-    height: auto;
+    width: 78%;
+    height: 90%;
     background-color: #FCC06A;
     border-radius: 3px;
     position: relative;
@@ -58,7 +58,7 @@ body {
     height: 33px;
     padding: 5px 0; 
     border: 1px solid #000;
-    margin: 10px 0px 0px;
+    
 }
 
 .search-modal .search i {
@@ -94,13 +94,19 @@ body {
 
 /* List item */
 .list-items {
+    margin-top: 10px;
+    background-color: #e8e8e8;
     display: flex;
     flex-wrap: wrap;
+    overflow: auto;
+    height: 545px;
 }
 
 .list-items .item {
+    text-decoration: none;
     margin: 10px 10px 0;
-    width: 190px;
+    width: 198px;
+    height: 260px;
 }
 
 .card {
@@ -116,32 +122,18 @@ body {
 .card-title {
     font-weight: 600;
     margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.75);
 }
+
+
 
 .price {
     margin-bottom: 0;
     color: red;
     font-size: 16px;
+    font-weight: 600;
 }
 
-.more {
-    display: flex;
-    justify-content: center;   
-}
-
-.more a {
-    border: 1px solid rgba(0, 0, 0, 0.7);
-    margin: 10px 0;
-    padding: 3px 15px;
-    border-radius: 3px;
-    background: white;
-    color: black;
-    text-decoration: none;
-}
-
-.more a:hover {
-    background-color: #EC7532;
-}
 
 
 
